@@ -13,6 +13,8 @@ RUN npm install
 # Copiar o restante do código do backend para o diretório de trabalho
 COPY . .
 
+ENV HOST=0.0.0.0
+
 # Expor a porta que o backend irá rodar
 EXPOSE 3000
 
